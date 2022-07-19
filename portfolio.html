@@ -39,12 +39,22 @@
           </ul>
         </nav>
 
-        <ul class="header-list-cont header-list list">
+        <ul class="header-list-cont list">
           <li class="header-item">
-            <a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="header-link link header-icon-item" href="mailto:info@devstudio.com">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./icons/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="header-item">
-            <a class="header-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="header-link link header-icon-item" href="tel:+380961111111">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./icons/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -64,7 +74,7 @@
 
           <ul class="portfolio-list list">
             <li class="portfolio-item">
-              <a href=""
+              <a class="portfolio-link link" href=""
                 ><img width="370" height="294" src="./images/portfolio/web.jpg" alt="Веб сайт" />
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-project">Технохряк</h2>
@@ -74,7 +84,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img
                   width="370"
                   height="294"
@@ -89,7 +99,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img
                   width="370"
                   height="294"
@@ -104,7 +114,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img width="370" height="294" src="./images/portfolio/market.jpg" alt="Наушники" />
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-project">Проект Prime</h2>
@@ -114,7 +124,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img width="370" height="294" src="./images/portfolio/growing.jpg" alt="Коробки" />
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-project">Проект Boxes</h2>
@@ -124,7 +134,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img width="370" height="294" src="./images/portfolio/borders.jpg" alt="Монитор" />
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-project">Inspiration has no Borders</h2>
@@ -134,7 +144,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img width="370" height="294" src="./images/portfolio/limited.jpg" alt="Книга" />
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-project">Издание Limited Edition</h2>
@@ -144,7 +154,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img width="370" height="294" src="./images/portfolio/lab.jpg" alt="Бирка" />
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-project">Проект LAB</h2>
@@ -154,7 +164,7 @@
             </li>
 
             <li class="portfolio-item">
-              <a href="">
+              <a class="portfolio-link link" href="">
                 <img width="370" height="294" src="./images/portfolio/growing.jpg" alt="Ноутбук" />
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-project">Growing Business</h2>
@@ -168,23 +178,58 @@
     </main>
 
     <footer class="footer">
-      <div class="conteiner">
-        <a class="footer-logo link" href="./index.html"
-          ><span class="acсent-logo">Web</span>Studio</a
-        >
-        <address class="footer-info">
-          <p class="footer-addres">г. Киев, пр-т Леси Украинки, 26</p>
+      <div class="conteiner footer-conteiner">
+        <div class="footer-address-conteiner">
+          <a class="footer-logo link" href="./index.html"
+            ><span class="acсent-logo">Web</span>Studio</a
+          >
+          <address class="footer-info">
+            <p class="footer-addres">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-list list">
+              <li class="footer-item">
+                <a class="footer-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
 
-          <ul class="footer-list list">
-            <li class="footer-item">
-              <a class="footer-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="footer-item">
+                <a class="footer-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-socials">
+          <p class="socials-desc">Присоединяйтесь</p>
+          <ul class="socials list">
+            <li>
+              <a href="" class="socials-link footer-socials-bg">
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./icons/icons.svg#instagram"></use>
+              </svg>
+              </a>
             </li>
-
-            <li class="footer-item">
-              <a class="footer-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li>
+              <a href="" class="socials-link footer-socials-bg">
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./icons/icons.svg#twitter"></use>
+              </svg>
+              </a>
             </li>
+            <li>
+              <a href="" class="socials-link footer-socials-bg">
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./icons/icons.svg#facebook"></use>
+              </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="socials-link footer-socials-bg">
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./icons/icons.svg#linkedin"></use>
+              </svg>
+              </a>
+            </li>
+           
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
