@@ -320,7 +320,7 @@ img {
   margin-bottom: 50px;
 }
 
-.customers-item {
+.customers-logo-link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -333,6 +333,16 @@ img {
 
 .customers-logo {
  fill: rgba(175, 177, 184, 1)
+}
+
+.customers-logo-link:hover,
+.customers-logo-link:focus {
+  border-color: rgba(33, 150, 243, 1);
+}
+
+.customers-logo-link:hover .customers-logo,
+.customers-logo-link:focus .customers-logo {
+  fill: rgba(33, 150, 243, 1)
 }
 
 /* footer section */
@@ -384,6 +394,44 @@ img {
   color: var(--hover-txt-color);
 }
 
+.footer-conteiner {
+  display: flex;
+  gap: 70px;
+}
+
+
+.socials-desc {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16px / 14px);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-socials-item {
+display: flex;
+align-items: center;
+justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer-socials-icon{
+  fill: #ffffff;
+}
 /* portfolio HTML */
 /* filter section */
 
